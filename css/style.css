@@ -37,17 +37,23 @@ body {
 
 .center-container {
     position: absolute;
-    top: 35%;
+    top: 14%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     z-index: 20;
+    width: min(90%, 780px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
 }
 
 .scroll-button {
-    width: 200px;
-    height: 64px;
+    width: 220px;
+    min-height: 64px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     border: 2px solid #333;
     font-size: 18px;
     font-weight: bold;
@@ -61,18 +67,6 @@ body {
     color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     transform: scale(1.05);
-}
-
-.content-section {
-    width: 100%;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #1a1919;
 }
 
 .top-buttons-container {
@@ -254,23 +248,32 @@ body {
 }
 
 .slogan{
-    position: absolute;
-    top: calc(35% - 5cm);  
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 36px; 
-    font-weight: bold;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.05;
     text-align: center;
     margin: 0;
-    z-index: 15; 
-    color: white; 
+    color: white;
+}
+
+.content-section {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    padding-top: 220px;
+    box-sizing: border-box;
+    background-color: #1a1919;
 }
 
 .content-section h2 {
-    margin-top: 180px; 
-    font-size: 36px; 
-    font-weight: bold; 
-    text-align: center; 
+    margin: 0 0 1.5rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    text-align: center;
     width: 100%;
     color: white;
 }
