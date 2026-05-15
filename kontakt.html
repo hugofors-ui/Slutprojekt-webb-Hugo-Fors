@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakta Oss</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/kontakt.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="chatgpt-logo-link">
+        <img
+          src="images/ChatGPT Image 17 apr. 2026 22_33_01.png"
+          alt="ChatGPT-logo"
+        />
+      </a>
+      <span class="tag">Välkommen</span>
+      <h1>Kontakta Oss</h1>
+      <p>Vi svarar vanligtvis inom ett par timmar under vardagar.</p>
+    </header>
+
+    <main>
+      <!-- KONTAKTFORMULÄR -->
+      <div class="card">
+        <h2>Skicka ett meddelande</h2>
+
+        <div class="form-group">
+          <label for="name">Namn</label>
+          <input type="text" id="name" placeholder="Ditt fullständiga namn" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-postadress</label>
+          <input type="email" id="email" placeholder="namn@exempel.se" />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Ämne</label>
+          <select id="subject">
+            <option value="">Välj ett ämne…</option>
+            <option>Allmän fråga</option>
+            <option>Support</option>
+            <option>Samarbete</option>
+            <option>Annat</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Meddelande</label>
+          <textarea
+            id="message"
+            placeholder="Skriv ditt meddelande här…"
+          ></textarea>
+        </div>
+
+        <button class="btn">Skicka meddelande</button>
+      </div>
+
+      <!-- KONTAKTINFO -->
+      <div class="card">
+        <h2>Kontaktuppgifter</h2>
+
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div class="info-text">
+            <strong>Adress</strong>
+            <span>Storgatan 12, 111 22 Stockholm</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div class="info-text">
+            <strong>Telefon</strong>
+            <span>+46 8 123 456 78</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div class="info-text">
+            <strong>E-post</strong>
+            <span>info@foretaget.se</span>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">🕐</div>
+          <div class="info-text">
+            <strong>Öppettider</strong>
+            <span>Mån–Fre: 08:00–17:00<br />Lör–Sön: Stängt</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TABELL -->
+      <div class="table-section">
+        <h2>Våra kontaktpersoner</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Namn</th>
+                <th>Roll</th>
+                <th>Avdelning</th>
+                <th>E-post</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Anna Lindqvist</td>
+                <td>Kundansvarig</td>
+                <td>Försäljning</td>
+                <td>anna@foretaget.se</td>
+                <td><span class="badge badge-green">Tillgänglig</span></td>
+              </tr>
+              <tr>
+                <td>Erik Johansson</td>
+                <td>Teknisk support</td>
+                <td>IT</td>
+                <td>erik@foretaget.se</td>
+                <td><span class="badge badge-orange">Upptagen</span></td>
+              </tr>
+              <tr>
+                <td>Maria Svensson</td>
+                <td>Projektledare</td>
+                <td>Projektledning</td>
+                <td>maria@foretaget.se</td>
+                <td><span class="badge badge-green">Tillgänglig</span></td>
+              </tr>
+              <tr>
+                <td>Jonas Berg</td>
+                <td>Ekonomiansvarig</td>
+                <td>Ekonomi</td>
+                <td>jonas@foretaget.se</td>
+                <td><span class="badge badge-blue">På möte</span></td>
+              </tr>
+              <tr>
+                <td>Sofia Karlsson</td>
+                <td>HR-chef</td>
+                <td>Personal</td>
+                <td>sofia@foretaget.se</td>
+                <td><span class="badge badge-green">Tillgänglig</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer>&copy; 2026 Företaget AB · Alla rättigheter förbehållna</footer>
+  </body>
+</html>

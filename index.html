@@ -1,111 +1,250 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body id="top">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="top">
     <a href="#top" class="chatgpt-image-link">
-        <img src="images/ChatGPT Image 17 apr. 2026 22_33_01.png" alt="ChatGPT Image" class="chatgpt-image"/>
+      <img
+        src="images/ChatGPT Image 17 apr. 2026 22_33_01.png"
+        alt="ChatGPT Image"
+        class="chatgpt-image"
+      />
     </a>
     <div class="top-buttons-container">
-        <button class="top-button">kontakta oss</button>
-        <button class="top-button">logga in</button>
+      <button class="cart-toggle" type="button" aria-label="Visa kundvagn">
+        <img src="images/kundvagn.jpg" alt="Kundvagn" />
+        <span class="cart-tooltip">Kundvagn är tom</span>
+      </button>
+      <button
+        class="top-button"
+        onclick="window.location.href = 'kontakt.html'"
+      >
+        kontakta oss
+      </button>
+      <button
+        class="top-button"
+        onclick="window.location.href = 'logga in.html'"
+      >
+        logga in
+      </button>
     </div>
-    
-    <header>
-        <div class="logo">
-            <img src="images/football_arena.gif" alt="logo"/>
-        </div>
-        
-    </header>
-    
-    <div class="center-container">
-        <button class="scroll-button" onclick="document.getElementById('content').scrollIntoView({behavior: 'smooth'})">see collection</button>
-    </div>
-    
-    <section id="content" class="content-section">
-        <h1 class="slogan">Wear Your Colors. Own the Game.</h1>
-        <h2>Trending shirts</h2>
-        
-<div class="product-grid">
 
-    <div class="product-card">
-        <div class="product-img">
-            <img src="images/arsenal_borta.jpg" alt="Arsenal bortatröja">
-        </div>
-        <div class="product-info">
+    <aside class="cart-panel" aria-hidden="true">
+      <button class="cart-close" type="button" aria-label="Stäng kundvagn">
+        ✕
+      </button>
+      <h2>Kundvagn</h2>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <span>Totalt:</span>
+        <strong>0 kr</strong>
+      </div>
+    </aside>
+
+    <header>
+      <div class="logo">
+        <img src="images/football_arena.gif" alt="logo" />
+      </div>
+    </header>
+
+    <div class="center-container">
+      <button
+        class="scroll-button"
+        onclick="
+          document
+            .getElementById('content')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        see collection
+      </button>
+    </div>
+
+    <section id="content" class="content-section">
+      <h1 class="slogan">Wear Your Colors. Own the Game.</h1>
+      <h2>Trending shirts</h2>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="images/arsenal_borta.jpg" alt="Arsenal bortatröja" />
+          </div>
+          <div class="product-info">
             <h3>Away Kit 2026</h3>
             <p class="club">Arsenal</p>
             <p class="price">849 kr</p>
             <button class="order-btn">Beställ</button>
+          </div>
         </div>
-    </div>
 
-    <div class="product-card">
-        <div class="product-img">
-            <img src="images/barca_hemma.jpg" alt="Barcelona hemmatröja">
-        </div>
-        <div class="product-info">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="images/barca_hemma.jpg" alt="Barcelona hemmatröja" />
+          </div>
+          <div class="product-info">
             <h3>Home Kit 2026</h3>
             <p class="club">FC Barcelona</p>
             <p class="price">849 kr</p>
             <button class="order-btn">Beställ</button>
+          </div>
         </div>
-    </div>
 
-    <div class="product-card">
-        <div class="product-img">
-            <img src="images/bayern_hemma.jpg" alt="Bayern München hemmatröja">
-        </div>
-        <div class="product-info">
+        <div class="product-card">
+          <div class="product-img">
+            <img
+              src="images/bayern_hemma.jpg"
+              alt="Bayern München hemmatröja"
+            />
+          </div>
+          <div class="product-info">
             <h3>Home Kit 2026</h3>
             <p class="club">Bayern München</p>
             <p class="price">879 kr</p>
             <button class="order-btn">Beställ</button>
+          </div>
         </div>
-    </div>
 
-    <div class="product-card">
-        <div class="product-img">
-            <img src="images/Inter_hemma.jpg" alt="Inter Milan hemmatröja">
-        </div>
-        <div class="product-info">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="images/Inter_hemma.jpg" alt="Inter Milan hemmatröja" />
+          </div>
+          <div class="product-info">
             <h3>Home Kit 2026</h3>
             <p class="club">Inter Milan</p>
             <p class="price">899 kr</p>
             <button class="order-btn">Beställ</button>
+          </div>
         </div>
-    </div>
 
-    <div class="product-card">
-        <div class="product-img">
-            <img src="images/PSG_hemma.jpg" alt="PSG hemmatröja">
-        </div>
-        <div class="product-info">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="images/PSG_hemma.jpg" alt="PSG hemmatröja" />
+          </div>
+          <div class="product-info">
             <h3>Home Kit 2026</h3>
             <p class="club">PSG</p>
             <p class="price">929 kr</p>
             <button class="order-btn">Beställ</button>
+          </div>
         </div>
-    </div>
 
-    <div class="product-card">
-        <div class="product-img">
-            <img src="images/sverige_borta.jpg" alt="Sverige bortatröja">
-        </div>
-        <div class="product-info">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="images/sverige_borta.jpg" alt="Sverige bortatröja" />
+          </div>
+          <div class="product-info">
             <h3>Away Kit 2026</h3>
             <p class="club">Sverige</p>
             <p class="price">879 kr</p>
             <button class="order-btn">Beställ</button>
+          </div>
         </div>
-    </div>
-
-</div>
+      </div>
     </section>
-    
-</body>
+
+    <footer class="site-footer">
+      Äkta passion för fotboll. Fotbollströjor från världens största klubbar och
+      landslag — för fans, spelare och samlare. Snabb leverans • Säker betalning
+      • Support när du behöver hjälp
+    </footer>
+
+    <script>
+      const cartToggle = document.querySelector(".cart-toggle");
+      const cartPanel = document.querySelector(".cart-panel");
+      const cartClose = document.querySelector(".cart-close");
+      const cartItemsContainer = document.querySelector(".cart-items");
+      const cartTotal = document.querySelector(".cart-total strong");
+      const cartTooltip = document.querySelector(".cart-tooltip");
+      const cartItems = [];
+
+      function formatPrice(price) {
+        return `${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} kr`;
+      }
+
+      function updateTooltip() {
+        if (!cartTooltip) return;
+        if (cartItems.length === 0) {
+          cartTooltip.textContent = "Kundvagn är tom";
+          return;
+        }
+
+        const items = cartItems.slice(0, 3).map((item) => item.name);
+        const extra = cartItems.length - items.length;
+        cartTooltip.textContent =
+          extra > 0 ? `${items.join(", ")} + ${extra} fler` : items.join(", ");
+      }
+
+      function updateTotal() {
+        const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+        cartTotal.textContent = formatPrice(total);
+      }
+
+      function renderCart() {
+        cartItemsContainer.innerHTML = "";
+        if (cartItems.length === 0) {
+          cartItemsContainer.innerHTML =
+            '<p class="cart-empty">Din kundvagn är tom.</p>';
+          updateTotal();
+          return;
+        }
+
+        cartItems.forEach((item, index) => {
+          const itemElement = document.createElement("div");
+          itemElement.className = "cart-item";
+
+          const itemText = document.createElement("span");
+          itemText.textContent = `${index + 1}. ${item.name}`;
+
+          const removeButton = document.createElement("button");
+          removeButton.className = "cart-remove";
+          removeButton.type = "button";
+          removeButton.textContent = "✕";
+          removeButton.addEventListener("click", () => {
+            cartItems.splice(index, 1);
+            renderCart();
+            updateTooltip();
+          });
+
+          itemElement.appendChild(itemText);
+          itemElement.appendChild(removeButton);
+          cartItemsContainer.appendChild(itemElement);
+        });
+
+        updateTotal();
+      }
+
+      document.querySelectorAll(".order-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const card = button.closest(".product-card");
+          const title = card.querySelector("h3").textContent.trim();
+          const club = card.querySelector(".club").textContent.trim();
+          const priceText = card
+            .querySelector(".price")
+            .textContent.replace(/[^0-9]/g, "");
+          const price = parseInt(priceText, 10) || 0;
+          const product = { name: `${title} — ${club}`, price };
+          cartItems.push(product);
+          renderCart();
+          updateTooltip();
+        });
+      });
+
+      cartToggle.addEventListener("click", () => {
+        const isOpen = cartPanel.classList.toggle("open");
+        cartPanel.setAttribute("aria-hidden", String(!isOpen));
+      });
+
+      cartClose.addEventListener("click", () => {
+        cartPanel.classList.remove("open");
+        cartPanel.setAttribute("aria-hidden", "true");
+      });
+
+      renderCart();
+      updateTooltip();
+    </script>
+  </body>
 </html>
